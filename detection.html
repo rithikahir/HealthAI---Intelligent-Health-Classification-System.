@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Detection</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div>
+  <nav>
+    <h1>
+      <b style="color:#f75802">HealthAI</b>
+      <a href="index.html">Home</a></li>
+      <a href="detection.html">Detection</a></li>
+      <a href="aboutus.html">About Us</a></li>
+      <a href="info.html">Info</a></li>
+    </h1>
+  <nav>
+</div>
+
+<div class="DetectionSelection">
+
+  <div class="DiseaseButton two-in-one" id="skinDiseaseBtn" onclick="redirectToPage('skin_disease_detect.html')">
+    <img src="images/skin.jpg" alt="Skin Image">
+  <div class="DiseaseText">SKIN</div>
+</div>
+  <div class="DiseaseButton two-in-one" id="chestDiseaseBtn" onclick="redirectToPage('chest_disease_detect.html')">
+    <img src="images/heart.jpg" alt="Chest Image">
+  <div class="DiseaseText">CHEST</div>
+</div>
+  <div class="DiseaseButton " id="brainTumorBtn" onclick="redirectToPage('brain_tumour_detect.html')">
+    <img src="images/Brain2.jpg" alt="Brain Image">
+  <div class="DiseaseText">BRAIN</div>
+</div>
+  <div class="DiseaseButton " id="kidneyDiseaseBtn" onclick="redirectToPage('kidney_disease_detect.html')">
+    <img src="images/kidney.jpeg" alt="Kidney Image">
+  <div class="DiseaseText">KIDNEY</div>
+</div>
+</div>
+
+</div>
+
+
+
+  <script>
+    // JavaScript function to redirect to a specific page
+    function redirectToPage(pageUrl) {
+      window.location.href = pageUrl;
+    }
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

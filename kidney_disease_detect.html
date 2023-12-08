@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/classify.css">
+  <title>Kidney Disease Detection</title>
+</head>
+<style>
+
+</style>
+<body>
+  <!-- Navigation Bar -->
+  <div>
+  <nav>
+    <h1>
+      <b style="color:#f75802;">HealthAI</b>
+      <a href="index.html">Home</a></li>
+      <a href="detection.html">Detection</a></li>
+      <a href="aboutus.html">About Us</a></li>
+      <a href="info.html">Info</a></li>
+    </h1>
+  <nav>
+  </div>
+
+
+  <!-- Kidney Disease Detection Page Content -->
+  <div class="container">
+  <h1>Kidney Disease Detection</h1>
+  <div>
+    <input type="file" id="imageUpload" accept="image/*">
+    <button id="submitBtn" onclick="performKidneyDiseaseDetection()">Submit</button>
+  </div>
+  <img id="imagePreview" src="#" alt="Image Preview" style="max-width: 300px; max-height: 300px; display: none;">
+  <div class="spinner-container">
+    <div class="spinner"></div>
+    <p class="spinner-text">Predicting...</p>
+  </div>
+  
+  <div id="resultSection">
+    <!-- Result will be shown here after classification -->
+  </div>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.8.0/dist/tf.min.js"></script>
+  <script src="js/image_classification.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

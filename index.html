@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+
+  <div class="video-container">
+    <video autoplay muted loop id="video-background">
+        <!-- Replace 'path_to_video.mp4' with the actual path to your video file -->
+        <source src="videos/Title1.mp4" type="video/mp4">
+        <!-- Add other video formats if needed (e.g., WebM, Ogg) -->
+        <!-- <source src="{% static 'path_to_video.webm' %}" type="video/webm"> -->
+        <!-- <source src="{% static 'path_to_video.ogv' %}" type="video/ogg"> -->
+        {% comment %} Your browser does not support the video tag. {% endcomment %}
+    </video>
+  <!-- Navigation Bar -->
+  <div>
+  <nav>
+    <h1>
+      <b style="color:#f75802;">HealthAI</b>
+      <a href="index.html">Home</a>
+      <a href="detection.html">Detection</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="info.html">Info</a>
+    </h1>
+  <nav>
+  </div>
+  
+  <div class="banner">
+   <!-- Home Page Content -->
+    <h1>Welcome to <span style="color:#f75802;">HealthAI</span></h1>
+   <p>Our HealthAI Web is designed to help detect brain, chest, skin and kidney disease and provide important information to patients and doctors. Our team is dedicated to improving the lives of those affected by brain, chest, skin and kidney disease.</p>
+    <div id="description-container"> 
+     <div id="description-box" ><a href="detection.html" class="detectbtn">Detect</a></div>
+    </div>
+   </div>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
