@@ -1,0 +1,417 @@
+/* Reset default styles to ensure consistent styling across browsers */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+
+  /* Main Content Container */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Home Page Styles */
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+    
+  }
+
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  /* Detection Page Styles */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #resultSection {
+    margin-top: 20px;
+  }
+  
+  /* About Us Page Styles */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: 50px;
+    height: 50px;
+    z-index: -1; /* Set the video behind other content */
+  }
+
+  /* Style the content on top of the video background */
+  .content {
+    position: relative;
+    z-index: 1; /* Set the content above the video */
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+  }
+
+
+  
+/*****************************  spinner css   **************************/
+
+/* Spinner Container */
+.spinner-container {
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure the spinner is on top of other content */
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-top: 10px solid #007bff; /* Change to your desired spinner color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Adjust animation duration as needed */
+  position: relative;
+  margin: 0 auto;
+}
+
+/* .spinner:before,
+.spinner:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+} */
+
+/* .spinner:before {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 6px solid rgba(0, 0, 0, 0.1);
+} */
+
+/* .spinner:after {
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 6px solid transparent;
+  border-top: 6px solid #007bff; /* Change to your desired spinner color */
+  /* animation: spin 0.5s linear infinite; /* Adjust animation duration as needed */
+
+
+/* Spinner Text (Optional) */
+.spinner-text {
+  margin-top: 10px;
+  text-align: center;
+  color: #555;
+  font-size: 20px;
+}
+/* ***************************** Making slide show effect **************************
+
+/* Add this CSS code to your existing styles */
+/* Slideshow container */
+/* .slideshow-container {
+  position: relative;
+  max-width: 70%;
+  height: auto; */
+  /* margin-top: 10px; */
+/* } */
+
+/* Hide images by default */
+/* .mySlides {
+  display: none;
+} */
+
+/* Position the navigation dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Change the color of the active dot */
+/* .active {
+  background-color: #717171;
+} */
+
+/* .banner::after {
+content: "";
+display: block;
+width: 100%;
+height: 100%;
+background-color: cadetblue;
+position :absolute;
+top: 0;
+left: 0;
+opacity: .7;
+z-index: 0;
+}
+ 
+
+.banner > *{
+  z-index: 10;
+  position: relative;
+} */
+
+/* Description on the home page */
+
+.banner {
+  position: relative;
+  width: 25%;
+  height: 70%;
+  margin: auto;
+  margin-top: 7rem ;
+  margin-left: 57rem;
+  text-align: center;
+
+}
+
+.banner p{
+  margin-top: 2rem;
+  font-size: 18;
+  font-family: cursive;
+  line-height: 24px;
+}
+
+.banner h1{
+  font-size: 30px;
+}
+
+
+/* Home page Detect button */
+
+.detectbtn {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight:bold;
+}
+
+.detectbtn:hover {
+  background-color: #0056b3;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* div.DetectionSelection {
+  min-height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0b29; /* Set the background color as needed 
+} */
+
+
+
+/* Description box of info.html and aboutus.html   */
+
+.description-box p,
+.description-box h1{
+  color: black;
+}    
+
+
+
+
+
+/* Style for detection.html page */
+
+
+
+
+.DiseaseButton {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.DetectionSelection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* Viewport height */
+  background-color: #0a0b29;
+}
+
+.DiseaseButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f75802;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+  width: 200px;
+}
+
+.DiseaseButton img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.DiseaseText {
+  display: none;
+  font-family: cursive;
+}
+
+.DiseaseButton:hover {
+  background-color: #d64902;
+}
+
+.DiseaseButton:hover .DiseaseText {
+  display: block;
+}
+
+/* Two buttons in one line */
+.DiseaseButton.two-in-one {
+  width: calc(50% - 30%); /* Adjust the width as needed */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .DiseaseButton {
+      width: calc(100% - 20px); /* Full width for smaller screens */
+  }
+}
+
+.DiseaseButton:hover {
+  background-color: #d64902;
+  width: 240px;
+  height: 180px;
+}
+
+.DiseaseButton:hover .DiseaseText {
+  opacity: 1;
+}
+
+.DiseaseButton:hover img {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.DiseaseButton:hover img,
+.DiseaseButton:hover .DiseaseText {
+  display: none;
+}
+
+.DiseaseButton:hover .DiseaseText {
+  display: block;
+}
+
+
+.DiseaseText{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 70px;
+}
+
+
+
+
+/* Style for kidney_disease_detect.html page */
+
